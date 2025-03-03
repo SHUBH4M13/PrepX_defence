@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('/src/Public/Fonts/helvetica-255/Helvetica-Bold.ttf') format('ttf'),
+  url('/src/Public/Fonts/helvetica-255/Helvetica.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme {
+  --font-Helvetica : "helvetica" , sans-serif;
+  --color-darkbg: #171717;
+  --color-PrimaryGold: #d4a017;
+  --color-Secondarybg: #262626;
+  --color-dullwhite: #ffffff90;
+  --color-hovergold: #d4a027e5;
+}
