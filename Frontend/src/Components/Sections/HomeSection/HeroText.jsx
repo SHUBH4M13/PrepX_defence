@@ -1,11 +1,12 @@
 import React from 'react'
-import { ArrowRightIcon , PlusIcon } from '@heroicons/react/24/solid'
+import { ArrowRightIcon, PlusIcon } from '@heroicons/react/24/solid'
+import TickInfoCard from '../../Utility/TickInfoCard'
 
 export default function HeroText() {
     return (
         <div className=' bg-darkbg w-full flex py-16'>
 
-            <div className='  px-16 flex flex-col '>
+            <div className='  px-16 flex flex-col'>
 
                 <div>
 
@@ -24,23 +25,31 @@ export default function HeroText() {
                         </h1>
                     </div>
                     <div>
-                        <p className=' py-5 text-lg text-white/90 font-Helvetica '> Prepare for NDA, CDS, AFCAT, and more with military-grade <br /> mock tests designed to ensure your success. Train like a warrior,<br />
+                        <p className=' py-5 text-xl text-white/90 font-Helvetica '> Prepare for NDA, CDS, AFCAT, and more with military-grade <br /> mock tests designed to ensure your success. Train like a warrior,<br />
                             succeed like a champion. </p>
                     </div>
                 </div>
 
-                <div className=' flex gap-3 '>
+                <div className=' flex gap-5 py-5 '>
                     <div className='  bg-PrimaryGold w-auto px-10 font-Helvetica font-bold hover:bg-hovergold duration-300 rounded-xl flex justify-center items-center'>
-                        <button className=' text-darkbg p-6 font-Helvetica font-bold rounded-xl'>Start Training Now</button>
-                        <ArrowRightIcon className='size-4 font-bold text-Secondarybg'/>
+                        <button className=' text-darkbg p-6 font-Helvetica font-bold  text-md rounded-xl'>Start Training Now</button>
+                        <ArrowRightIcon className='size-4 font-bold text-Secondarybg' />
                     </div>
 
                     <div className='  border-darkgreen border-2 w-auto px-10 font-Helvetica rounded-xl flex justify-center hover:border-PrimaryGold duration-300 hover:bg-Secondarybg items-center '>
-                        <button className=' text-white p-6 font-Helvetica rounded-xl'>Explore Features</button>
-                        <PlusIcon className='size-4 font-bold text-white'/>
+                        <button className=' text-white p-6 font-Helvetica rounded-xl text-md'>Explore Features</button>
+                        <PlusIcon className='size-4 font-bold text-white' />
                     </div>
 
                 </div>
+
+                <div className=' px-20 py-3 flex justify-center'>
+                    <div className=' flex gap-8 '>
+                        <TickInfoCard text=" AI based results" />
+                        <TickInfoCard text=" AI based results" />
+                    </div>
+                </div>
+
 
             </div>
 
