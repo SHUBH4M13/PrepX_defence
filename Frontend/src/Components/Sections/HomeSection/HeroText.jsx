@@ -5,14 +5,14 @@ import MacbookProcess from './MacBookProcess'
 
 export default function HeroText() {
     return (
-        <div className=' bg-darkbg w-full flex flex-col lg:flex-row gap-4 md:gap-2 py-16'>
+        <div className=' bg-darkbg w-full flex flex-col lg:flex-row  gap-4 md:gap-2 px-14 py-16'>
 
             <div className='  px-16 flex flex-col animate-fade-in-left'>
 
                 <div>
                     <div>
 
-                        <div className='flex  justify-center items-center' >
+                        <div className='flex ' >
                             <h1 className=' text-4xl text-center sm:text-left sm:text-6xl font-Helvetica text-PrimaryGold font-bold'>Conquer</h1>
                             <h1 className=' px-3 text-4xl text-center sm:text-left sm:text-6xl font-Helvetica text-white font-bold '>
                                 Defence
