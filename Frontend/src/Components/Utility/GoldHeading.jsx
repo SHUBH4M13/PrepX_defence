@@ -11,7 +11,14 @@ export default function GoldHeading(props) {
             </div>
 
             <div className=' flex justify-center items-center '>
-               <h1 className='text-6xl font-Helvetica text-center font-bold text-white underline decoration-darkgreen decoration-4 underline-offset-8'>{props.semiheading}</h1>
+                <h1 className='text-6xl font-Helvetica text-center font-bold text-white underline decoration-darkgreen decoration-4 underline-offset-8'>{props.semiheading}</h1>
+            </div>
+
+            <div className=' py-5 hover:text-white duration-300'>
+                <p className=' text-white/80 text-center hover:text-white duration-300 '> {props.text1}
+                </p>
+                <p className=' text-white/80 text-center hover:text-white duration-300 '> {props.text2}
+                </p>
             </div>
 
         </div>
