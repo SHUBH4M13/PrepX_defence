@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Navbar() {
     return (
-        <div className=' z-10 w-full h-[64px] flex bg-darkbg justify-between items-center py-10 border-[#00000002]  shadow-black shadow-5xl border-b-2'>
+        <div className=' z-10 w-full h-[64px] flex bg-darkbg justify-between items-center py-10 border-[#00000002]  shadow-black shadow-5xl border-b-2 animate-fade-in-up'>
             <div className=' flex justify-center items-center px-20'>
                 <p className=' font-Helvetica text-PrimaryGold text-2xl font-semibold'>PrepX</p>
             </div>

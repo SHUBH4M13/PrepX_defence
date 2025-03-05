@@ -1,12 +1,13 @@
 import React from 'react'
 import { ArrowRightIcon, PlusIcon } from '@heroicons/react/24/solid'
 import TickInfoCard from '../../Utility/TickInfoCard'
+import MacbookProcess from './MacBookProcess'
 
 export default function HeroText() {
     return (
         <div className=' bg-darkbg w-full flex py-16'>
 
-            <div className='  px-16 flex flex-col'>
+            <div className='  px-16 flex flex-col animate-fade-in-left'>
 
                 <div>
 
@@ -53,8 +54,8 @@ export default function HeroText() {
 
             </div>
 
-            <div>
-                XYz==
+            <div className=' animate-fade-in-right'>
+               <MacbookProcess/>
             </div>
 
         </div>
