@@ -7,14 +7,13 @@ import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
   return (
-    <div className=' bg-darkbg min-h-screen'>
-      <Navbar />
+    <div className='bg-darkbg w-full '>
       <HeroText />
-      <Analytics />
+      {/* <Analytics />
       <div className=' flex justify-center items-center'>
         <NumbersStrap />
       </div>
-      <Feature />
+      <Feature /> */}
     </div>
   )
 }
