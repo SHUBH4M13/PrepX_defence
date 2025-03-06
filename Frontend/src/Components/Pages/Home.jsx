@@ -9,9 +9,9 @@ export default function Home() {
   return (
     <div className='bg-darkbg w-full '>
       <Navbar/>
-      {/* <HeroText />
-      {/* <Analytics />
-      <div className=' flex justify-center items-center'>
+      <Analytics />
+      <HeroText />
+      {/* <div className=' flex justify-center items-center'>
         <NumbersStrap />
       </div>
       <Feature /> */}
