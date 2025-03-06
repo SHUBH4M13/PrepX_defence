@@ -14,7 +14,8 @@ export default function Feature() {
                 />
             </div>
 
-            {/* <div className='bg-Secondarybg/55 py-10 flex justify-between items-center gap-3 px-24'>
+            <div className='bg-Secondarybg/55 lg:px-2 md:justify-around xl:px-18 py-10 flex flex-col items-center sm:flex-row sm:justify-between sm:items-center gap-3 md:px-4 md:gap-2'>
+
                 <FeatureCard
                     FeatureHead="Timed Test Mode"
                     text="Essentail"
@@ -22,13 +23,15 @@ export default function Feature() {
                     infotext1="Time Management"
                     infotext2="Exam Simulation"
                 />
-                <FeatureCard
-                    FeatureHead="Tab-Switch Detection"
-                    text="Advanced"
-                    desc="Our platform detects tab switching during tests, enforcing exam discipline and preventing unfair advantages. Build integrity while you prepare."
-                    infotext1="Anti-Cheating"
-                    infotext2="Discipline Buidling"
-                />
+                <div className=' hidden lg:block  '>
+                    <FeatureCard
+                        FeatureHead="Tab-Switch Detection"
+                        text="Advanced"
+                        desc="Our platform detects tab switching during tests, enforcing exam discipline and preventing unfair advantages. Build integrity while you prepare."
+                        infotext1="Anti-Cheating"
+                        infotext2="Discipline Buidling"
+                    />
+                </div>
                 <FeatureCard
                     FeatureHead="Non-Timed Practice"
                     text="Foundational"
@@ -38,8 +41,8 @@ export default function Feature() {
                 />
             </div>
 
-            <div className='bg-Secondarybg/55 py-5 flex justify-between items-center gap-3 px-24'>
-                <FeatureCard
+            <div className='bg-Secondarybg/55 lg:px-2  md:justify-around xl:px-18 md:py-5 flex flex-col items-center sm:flex-row sm:justify-between sm:items-center gap-3 md:px-4 md:gap-2' >
+                <FeatureCard 
                     FeatureHead="AI-Based Analysis"
                     text="Strategic"
                     desc="Receive detailed performance insights powered by AI. Identify your strengths and weaknesses to create a targeted improvement strategy."
@@ -53,15 +56,20 @@ export default function Feature() {
                     infotext1="Updated Content"
                     infotext2="Complete Coverage"
                 />
-                <FeatureCard
-                    FeatureHead="Secure Test Environment"
-                    text="Protected"
-                    desc="Experience a fully secure testing platform with protocols that mimic actual examination conditions, preparing you for the disciplined environment of defence exams."
-                    infotext1="Exam Simulation"
-                    infotext2="Integrity Checks"
-                />
 
-            </div> */}
+                <div className=' hidden lg:block '>
+
+                    <FeatureCard
+                        FeatureHead="Secure Test Environment"
+                        text="Protected"
+                        desc="Experience a fully secure testing platform with protocols that mimic actual examination conditions, preparing you for the disciplined environment of defence exams."
+                        infotext1="Exam Simulation"
+                        infotext2="Integrity Checks"
+                    />
+                </div>
+
+
+            </div>
 
         </div>
 
