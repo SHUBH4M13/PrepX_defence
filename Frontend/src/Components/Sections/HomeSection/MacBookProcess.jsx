@@ -4,7 +4,7 @@ import { ClockIcon } from '@heroicons/react/24/outline'
 
 export default function MacbookProcess () {
   return (
-    <div className=' w-[363px] md:w-[612px] h-[552px] md:h-[512px] lg:w-[422px] rounded-xl bg-[#232323] border-[#333333] border shadow-sm hover:shadow-PrimaryGold duration-300'>
+    <div className=' w-[363px] md:w-[612px] h-[552px] md:h-[512px] lg:w-[428px] xl:w-[652px] rounded-xl bg-[#232323] border-[#333333] border shadow-sm hover:shadow-PrimaryGold duration-300'>
 
         <div className='w-full h-[12px] px-5 py-5 flex gap-2'>
             <div className=' w-[12px] h-[12px] rounded-full bg-red-500'></div>
