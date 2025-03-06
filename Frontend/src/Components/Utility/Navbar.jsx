@@ -18,7 +18,7 @@ export default function Navbar() {
                 <p className=' font-Helvetica text-PrimaryGold text-2xl font-semibold'>PrepX</p>
             </div>
 
-            <div className=' hidden sm:flex sm:justify-center sm:items-center sm:px-20 sm:gap-7.5 '>
+            <div className=' hidden sm:flex sm:justify-center sm:items-center sm:px-8 sm:gap-6 '>
                 <p className=' text-dullwhite hover:text-PrimaryGold font-Helvetica duration-300 cursor-pointer'>Home</p>
                 <p className=' text-dullwhite hover:text-PrimaryGold font-Helvetica duration-300 cursor-pointer'>Exams</p>
                 <div className='' >

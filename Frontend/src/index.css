@@ -16,6 +16,7 @@
   --color-dullwhite: #ffffff90;
   --color-hovergold: #d4a027e5;
   --color-darkgreen: #4D5D53;
+  --breakpoint-phone: 30rem;
 }
 
 @layer utilities {

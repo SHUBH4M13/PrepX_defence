@@ -14,7 +14,7 @@ export default function Feature() {
                 />
             </div>
 
-            <div className='bg-Secondarybg/55 py-10 flex justify-between items-center gap-3 px-24'>
+            {/* <div className='bg-Secondarybg/55 py-10 flex justify-between items-center gap-3 px-24'>
                 <FeatureCard
                     FeatureHead="Timed Test Mode"
                     text="Essentail"
@@ -61,7 +61,7 @@ export default function Feature() {
                     infotext2="Integrity Checks"
                 />
 
-            </div>
+            </div> */}
 
         </div>
 

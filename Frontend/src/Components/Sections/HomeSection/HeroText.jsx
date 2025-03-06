@@ -5,7 +5,7 @@ import MacbookProcess from './MacBookProcess'
 
 export default function HeroText() {
     return (
-        <div className=' bg-darkbg w-full flex flex-col lg:flex-row md:justify-between gap-4 md:gap-2 px-4 sm:px-14 py-16 lg:gap-8'>
+        <div className=' bg-darkbg w-full flex flex-col lg:flex-row md:justify-between xl:justify-around gap-4 md:gap-2 px-4 sm:px-14 py-16 lg:gap-8'>
 
             <div className='flex flex-col animate-fade-in-left'>
 
