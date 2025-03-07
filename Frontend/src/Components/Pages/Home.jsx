@@ -2,7 +2,8 @@ import React from 'react'
 import Navbar from '../Utility/Navbar'
 import HeroText from '../Sections/HomeSection/HeroText'
 import NumbersStrap from '../Sections/HomeSection/NumbersStrap'
-import Feature from '../Sections/Features/Feature'
+import Feature from '../Sections/HomeSection/Features/Feature'
+import Exams from '../Sections/HomeSection/Exams/Exams'
 import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         <NumbersStrap />
       </div>
       <Feature />
+      <Exams/>
     </div>
   )
 }
