@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ExamCard(props) {
   return (
-    <div className=" w-[330px]  rounded-lg overflow-hidden relative group animate-fadeInUp">
+    <div className=" w-[250px]  rounded-lg overflow-hidden relative group animate-fadeInUp">
       <div className="absolute inset-0 bg-gradient-to-b from-[#D4A017]/20 to-[#4D5D53]/70 opacity-80 transition-opacity duration-300 group-hover:opacity-100"></div>
 
       <div className="border-2 border-neutral-800 group-hover:border-[#D4A017] transition-colors duration-300 h-full">

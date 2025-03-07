@@ -1,6 +1,6 @@
 const TacticalGrid = () => {
     return (
-      <div className="absolute inset-0 opacity-5">
+      <div className="absolute inset-0 opacity-1">
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
           <pattern id="tactical-grid" width="40" height="40" patternUnits="userSpaceOnUse">
             <path d="M0 0h40v40H0z" fill="none" stroke="#4D5D53" strokeWidth="1"></path>

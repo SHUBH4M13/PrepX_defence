@@ -5,6 +5,7 @@ import NumbersStrap from '../Sections/HomeSection/NumbersStrap'
 import Feature from '../Sections/HomeSection/Features/Feature'
 import Exams from '../Sections/HomeSection/Exams/Exams'
 import { Analytics } from "@vercel/analytics/react"
+import Footer from '../Utility/Footer'
 
 export default function Home() {
   return (
@@ -16,7 +17,10 @@ export default function Home() {
         <NumbersStrap />
       </div>
       <Feature />
-      <Exams/>
+      <Exams />
+      <div className=' py-10'>
+        <Footer />
+      </div>
     </div>
   )
 }

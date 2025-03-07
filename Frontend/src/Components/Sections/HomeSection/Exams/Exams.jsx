@@ -24,35 +24,33 @@ export default function Exams() {
           description = "Prepare for tri-service academy entry with comprehensive mock tests covering mathematics, general ability, and intelligence."
            />
            <ExamCard
-          title = "NDA"
-          subtitle = "National Defence Academy"
-          description = "Prepare for tri-service academy entry with comprehensive mock tests covering mathematics, general ability, and intelligence."
+          title = "CDS"
+          subtitle = "Combined Defence Services"
+          description = "Practice with our CDS mock tests covering English, general knowledge, and elementary mathematics in exam format."
            />
            <ExamCard
-          title = "NDA"
-          subtitle = "National Defence Academy"
-          description = "Prepare for tri-service academy entry with comprehensive mock tests covering mathematics, general ability, and intelligence."
+          title = "AFCAT"
+          subtitle = "Air Force Common Admission Test"
+          description = "Soar through AFCAT preparation with our specialized tests covering general awareness, verbal, and numerical ability."
            />
            <ExamCard
-          title = "NDA"
-          subtitle = "National Defence Academy"
-          description = "Prepare for tri-service academy entry with comprehensive mock tests covering mathematics, general ability, and intelligence."
+          title = "CAPF"
+          subtitle = "Central Armed Police Forces"
+          description = "Prepare for CAPF AC with our specialized tests focusing on general studies, mental ability, and numerical aptitude."
            />
            <ExamCard
-          title = "NDA"
-          subtitle = "National Defence Academy"
-          description = "Prepare for tri-service academy entry with comprehensive mock tests covering mathematics, general ability, and intelligence."
+          title = "INET"
+          subtitle = "Indian Navy Entrance Test"
+          description = "Navigate through INET preparation with our comprehensive tests for mathematics, English, general science and reasoning."
            />
            <ExamCard
-          title = "NDA"
-          subtitle = "National Defence Academy"
-          description = "Prepare for tri-service academy entry with comprehensive mock tests covering mathematics, general ability, and intelligence."
+          title = "SSB"
+          subtitle = "Services Selection Board"
+          description = "Master SSB interviews with our specialized preparation modules covering psychological tests, GTO tasks, and interview simulations."
            />
         </div>
       </div>
-
-
-
+      
     </div>
 
   )
