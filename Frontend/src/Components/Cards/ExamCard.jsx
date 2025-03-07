@@ -2,14 +2,14 @@ import React from "react";
 
 export default function ExamCard(props) {
   return (
-    <div className=" w-[250px] md:w-[300px] lg:w-[350px] rounded-lg overflow-hidden relative group animate-fadeInUp">
+    <div className=" cursor-pointer w-[250px] md:w-[300px] lg:w-[350px] rounded-lg overflow-hidden relative group animate-fadeInUp">
       <div className="absolute inset-0 bg-gradient-to-b from-[#D4A017]/20 to-[#4D5D53]/70 opacity-80 transition-opacity duration-300 group-hover:opacity-100"></div>
 
       <div className="border-2 border-neutral-800 group-hover:border-[#D4A017] transition-colors duration-300 h-full">
         <div className="relative p-6 h-full flex flex-col bg-neutral-800/50 group-hover:bg-neutral-800/80 transition-all duration-300">
           
           <div className="bg-neutral-900/50 group-hover:bg-[#4D5D53]/20 rounded-full w-16 h-16 flex items-center justify-center mb-4 transition-all duration-300 transform group-hover:scale-110">
-            <span className="text-2xl font-bold text-[#D4A017]">{props.title}</span>
+            <span className="text-lg font-bold text-[#D4A017]">{props.title}</span>
           </div>
 
           <h3 className="text-xl font-bold mb-2 text-white">{props.subtitle}</h3>

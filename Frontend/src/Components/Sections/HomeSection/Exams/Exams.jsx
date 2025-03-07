@@ -5,9 +5,9 @@ import ExamCard from '../../../Cards/ExamCard'
 export default function Exams() {
   return (
 
-    <div className=' bg-darkbg px-10  '>
+    <div className=' bg-darkbg '>
 
-      <div className='bg-darkbg w-full'>
+      <div className='bg-darkbg w-full px-10' >
         <GoldHeading
           heading="Mission Selection"
           semiheading="Choose Your Battleground"
@@ -16,7 +16,7 @@ export default function Exams() {
         />
       </div>
 
-      <div className=' flex justify-center'>
+      <div className=' flex justify-center items-center'>
         <div className=' grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6  '>
           <ExamCard
           title = "NDA"
