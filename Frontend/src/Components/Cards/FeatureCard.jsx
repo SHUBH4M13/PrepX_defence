@@ -4,7 +4,7 @@ import InfoCard from '../Utility/InfoCard';
 
 export default function FeatureCard(props) {
     return (
-        <div className='md:w-[342px] md:h-[344px] w-[283px] h-[424px] bg-neutral-900 border-neutral-700 flex flex-col border-[1px] rounded-lg p-6 gap-5'>
+        <div className='md:w-[342px] md:h-[344px] w-[283px] h-[424px] bg-neutral-900 border-neutral-700 flex flex-col border-[1px] rounded-lg p-6 gap-5 hover:shadow-PrimaryGold shadow-md duration-300'>
 
             <div className='w-14 h-14 rounded-full flex justify-center items-center bg-[#4D5D53]/20'>
                 <ClockIcon className='text-PrimaryGold size-8' />

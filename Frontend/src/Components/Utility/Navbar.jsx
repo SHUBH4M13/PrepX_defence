@@ -18,6 +18,10 @@ export default function Navbar() {
         navigate("/login")
     }
 
+    const GoTosignup = () => {
+        navigate("/signup")
+    }
+
 
     return (
         <div className=' z-10 w-full h-[64px] flex bg-darkbg justify-between items-center py-10 border-[#00000002]  shadow-black shadow-5xl border-b-2 animate-fade-in-up'>
@@ -34,7 +38,7 @@ export default function Navbar() {
                     </button>
                 </div>
                 <div className=' bg-PrimaryGold hover:bg-hovergold flex w-[81px] h-[36px] justify-center items-center rounded-lg duration-300 '>
-                    <button className=' font-Helvetica text-center text-white '>Sign Up</button>
+                    <button onClick={GoTosignup} className=' font-Helvetica text-center text-white cursor-pointer '>Sign Up</button>
                 </div>
             </div>
 
@@ -54,7 +58,7 @@ export default function Navbar() {
             <button onClick={GoToLogin} className="border-dullwhite hover:border-PrimaryGold border-2 w-[120px] h-[45px] rounded-lg duration-300 hover:text-PrimaryGold text-center text-dullwhite font-Helvetica cursor-pointer">
                 Login
             </button>
-            <button className="bg-PrimaryGold hover:bg-hovergold flex w-[120px] h-[45px] justify-center items-center rounded-lg duration-300 font-Helvetica text-white">
+            <button onClick={GoTosignup} className="bg-PrimaryGold hover:bg-hovergold flex w-[120px] h-[45px] justify-center items-center rounded-lg duration-300 font-Helvetica text-white cursor-pointer">
                 Sign Up
             </button>
             
