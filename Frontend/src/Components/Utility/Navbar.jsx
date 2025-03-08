@@ -1,14 +1,21 @@
 import React from 'react'
 import { Bars3Icon, XMarkIcon  , ArrowLeftIcon } from '@heroicons/react/24/solid'
 import { useState } from 'react'
+import { useNavigate } from 'react-router';
 
 
 export default function Navbar() {
+
+    const navigate = useNavigate();
 
     const [ToggleNav, setToggleNav] = useState(false);
 
     function changeToggle() {
         setToggleNav((prev) => !prev)
+    }
+
+    const GoToLogin = () => {
+        navigate("/login")
     }
 
 
@@ -22,7 +29,9 @@ export default function Navbar() {
                 <p className=' text-dullwhite hover:text-PrimaryGold font-Helvetica duration-300 cursor-pointer'>Home</p>
                 <p className=' text-dullwhite hover:text-PrimaryGold font-Helvetica duration-300 cursor-pointer'>Exams</p>
                 <div className='' >
-                    <button className='border-dullwhite hover:border-PrimaryGold  border-2 w-[81px] h-[36px]  rounded-lg duration-300  hover:text-PrimaryGold  text-center text-dullwhite font-Helvetica  '>Login</button>
+                    <button onClick={GoToLogin} className='border-dullwhite hover:border-PrimaryGold cursor-pointer border-2 w-[81px] h-[36px]  rounded-lg duration-300  hover:text-PrimaryGold  text-center text-dullwhite font-Helvetica'>
+                        Login
+                    </button>
                 </div>
                 <div className=' bg-PrimaryGold hover:bg-hovergold flex w-[81px] h-[36px] justify-center items-center rounded-lg duration-300 '>
                     <button className=' font-Helvetica text-center text-white '>Sign Up</button>
@@ -42,7 +51,7 @@ export default function Navbar() {
             <p className="text-dullwhite hover:text-PrimaryGold font-Helvetica duration-300 cursor-pointer text-xl">
                 Exams
             </p>
-            <button className="border-dullwhite hover:border-PrimaryGold border-2 w-[120px] h-[45px] rounded-lg duration-300 hover:text-PrimaryGold text-center text-dullwhite font-Helvetica">
+            <button onClick={GoToLogin} className="border-dullwhite hover:border-PrimaryGold border-2 w-[120px] h-[45px] rounded-lg duration-300 hover:text-PrimaryGold text-center text-dullwhite font-Helvetica cursor-pointer">
                 Login
             </button>
             <button className="bg-PrimaryGold hover:bg-hovergold flex w-[120px] h-[45px] justify-center items-center rounded-lg duration-300 font-Helvetica text-white">
@@ -57,8 +66,6 @@ export default function Navbar() {
     </div>
 )}
 
-
-        
         </div>
     )
 }
