@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 
-export default function SignUpLogin() {
+export default function Login() {
     const [data, setdata] = useState({
         username: "",
         password: "",
