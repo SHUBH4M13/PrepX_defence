@@ -1,5 +1,5 @@
 import Home from "./Components/Pages/Home"
-import SignUpLogin from "./Components/Pages/SignUpLogin"
+import SignUpLogin from "./Components/Pages/Login"
 
 function App() {
 
