@@ -50,15 +50,13 @@ export default function Login() {
 
         try {
             if(res.status ===  200)  {
-                console.log(res.data);
                 GoToHome();
+            } else {
+                seterror("No User Found");
             }
         } catch (error) {
             console.log(error);
-            seterror("No User Found")
         }
-
-        // If no error, then API call 
     
     };
 
