@@ -2,6 +2,7 @@ import React from 'react'
 import { FcGoogle } from "react-icons/fc";
 import { useNavigate } from 'react-router';
 import { useState } from 'react';
+import axios from 'axios';
 
 export default function Signup() {
 
@@ -17,6 +18,7 @@ export default function Signup() {
 
     const [data, setdata] = useState({
         username: "",
+        email: "",
         password: "",
         confirmpass: ""
     })
@@ -33,13 +35,13 @@ export default function Signup() {
         setSignUpError(""); // when user rewrite anything error clears 
     }
 
-    const HandleSubmit = (e) => {
+    const HandleSubmit = async (e) => {
 
         e.preventDefault();
 
         let newError = "";
 
-        if (!data.username || !data.password || !data.confirmpass) {
+        if (!data.username || !data.email || !data.password || !data.confirmpass) {
             newError = "Please Fill all the Required Fields"
             setSignUpError(newError);
         }
@@ -54,7 +56,19 @@ export default function Signup() {
             setSignUpError(newError);
         }
 
-        GoTohome();
+        try {
+            const res = await axios.post("http://localhost:8080/signup" , data , {
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            });
+            if (res.data) {
+                GoTohome();
+            }
+        } catch (error) {
+            console.log(error)
+            setSignUpError("Error in Creating User");
+        }
 
     }
 
@@ -91,6 +105,19 @@ export default function Signup() {
                     </div>
 
                     <div>
+                        <p className="text-dullwhite text-sm">Email</p>
+                        <input
+                            type="email"
+                            name="email"
+                            value={data.email}
+                            onChange={handleChange}
+                            placeholder="Enter Username"
+                            className="w-full p-2 border border-gray-600 rounded-md focus:outline-none focus:border-PrimaryGold bg-transparent text-white"
+                        />
+
+                    </div>
+
+                    <div>
                         <p className="text-dullwhite text-sm">Password</p>
                         <input
                             type="password"
@@ -117,7 +144,7 @@ export default function Signup() {
                     {SignUpError && <p className="text-red-500 text-sm">{SignUpError}</p>}
 
                     <button
-                        type="submit"
+                        type="button"
                         onClick={HandleSubmit}
                         className="bg-PrimaryGold cursor-pointer text-black font-semibold py-2 rounded-md hover:bg-yellow-500 transition-all"
                     >

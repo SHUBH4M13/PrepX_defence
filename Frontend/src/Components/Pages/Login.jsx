@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { useNavigate } from "react-router";
@@ -30,7 +31,7 @@ export default function Login() {
         seterror(""); // Reset error when user types
     };
 
-    const HandleSubmit = (e) => {
+    const HandleSubmit = async (e) => {
         e.preventDefault();
 
         let NewError = "";
@@ -41,7 +42,22 @@ export default function Login() {
             return;
         }
 
-        GoToHome();
+        const res = await axios.post("http://localhost:8080/login" , data ,{
+            headers: {
+                "Content-Type": "application/json",
+            },
+        })
+
+        try {
+            if(res.status ===  200)  {
+                console.log(res.data);
+                GoToHome();
+            }
+        } catch (error) {
+            console.log(error);
+            seterror("No User Found")
+        }
+
         // If no error, then API call 
     
     };
@@ -91,7 +107,8 @@ export default function Login() {
                     {error && <p className="text-red-500 text-sm">{error}</p>}
 
                     <button
-                        type="submit"
+                        type="button"
+                        onClick={HandleSubmit}
                         className="bg-PrimaryGold cursor-pointer text-black font-semibold py-2 rounded-md hover:bg-yellow-500 transition-all"
                     >
                         Login

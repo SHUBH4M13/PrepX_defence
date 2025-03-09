@@ -3,8 +3,8 @@ import React from 'react'
 export default function TestCard( props ) {
     return (
         <div className=' px-15  flex justify-center cursor-pointer '>
-            <div className=' px-10 py-5  rounded-xl  bg-Secondarybg w-5/6 h-[240px] gap-10 shadow-PrimaryGold hover:shadow-xs duration-300 flex '>
-                <div className=' w-[150px] h-[130px]'>
+            <div className=' px-10 py-5  rounded-xl  bg-Secondarybg w-[340px] md:w-[650px] lg:w-[750px] md:h-fit h-fit   xl:w-5/6 sm:h-[240px] gap-10 shadow-PrimaryGold hover:shadow-xs duration-300 flex '>
+                <div className=' w-[150px] h-[130px] hidden sm:block'>
                     <img src = {props.ExamPhoto } alt="" />
                 </div>
 
