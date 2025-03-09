@@ -10,21 +10,24 @@ export default function NDA() {
             ExamSet: "NDA 2024 GAT SET-1",
             ExamRule1: "The GAT has 150 questions, with 50 on English and 100 on General Knowledge.",
             ExamRule2: "Each correct answer is worth 4 marks, and each incorrect answer deducts 1.33 marks.",
-            ExamRule3: "The GAT is worth 600 points in the NDA exam."
+            ExamRule3: "The GAT is worth 600 points in the NDA exam.",
+            ExamCode: "NDA2024ENG01"
         },
         {
             ExamPhoto: "https://example.com/sample-exam.jpg",
             ExamSet: "NDA 2024 GAT SET-2",
             ExamRule1: "150 questions total: 50 on English, 100 on General Knowledge.",
             ExamRule2: "4 marks per correct answer, -1.33 for incorrect.",
-            ExamRule3: "Total 600 points in this section."
+            ExamRule3: "Total 600 points in this section.",
+            ExamCode: "NDA2024ENG02"
         },
         {
             ExamPhoto: "https://example.com/sample-exam.jpg",
             ExamSet: "NDA 2024 GAT SET-3",
             ExamRule1: "The paper consists of 150 multiple-choice questions.",
             ExamRule2: "Negative marking: 1.33 marks per wrong answer.",
-            ExamRule3: "Overall score: 600 points."
+            ExamRule3: "Overall score: 600 points.",
+            ExamCode: "NDA2024ENG03"
         },
     ];
 
